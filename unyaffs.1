@@ -1,0 +1,31 @@
+.\" (C) Copyright 2013 Matthew Fischer <matthew.fischer@ubuntu.com>,
+.TH UNYAFFS 1 "March 23, 2013"
+.SH NAME
+unyaffs \- extract files from a YAFFS2 file system image
+.SH SYNOPSIS
+.B unyaffs
+.RI [ options ] <image_file_name> [<extract_directory>]
+.SH DESCRIPTION
+.B unyaffs
+extracts files from a YAFFS2 file system image that was created with
+mkyaffs2image.
+.PP
+.SH OPTIONS
+.TP
+.B \-d
+detect of flash layout, no extraction
+.TP
+.B \-b
+spare contains bad block information
+.B \-c <chunk size>
+get chunk size in KByte (default: autodetect, max: 16)
+.B \-s <spare size>
+set spare size in Byte  (default: autodetect, max: 512)
+.B \-t
+list image contents
+.B \-v
+verbose output
+.B \-V
+print version information
+.sp
+.LP
