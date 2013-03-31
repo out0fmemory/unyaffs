@@ -1,4 +1,4 @@
-CFLAGS += -O2 -Wall -D_FORTIFY_SOURCE=2
+CFLAGS += -O2 -Wall
 
 unyaffs: unyaffs.c unyaffs.h
 	$(CC) $(CFLAGS) $(LDFLAGS) unyaffs.c -o unyaffs
