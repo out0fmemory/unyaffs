@@ -39,9 +39,11 @@
  *   Option -d shows detected flash layout, no extraction
  * V0.9.5  2012-12-02
  *   Bug in verifying the -s (spare) parameter
+ * V0.9.6  2013-04-09
+ *   Added man page
  */
 
-#define VERSION		"0.9.5"
+#define VERSION		"0.9.6"
 
 /* check if lutimes is available */
 #if defined(__linux__) || defined(__FreeBSD__) || defined(__NetBSD__) || (defined(__APPLE__) && defined(__MACH__))
