@@ -30,7 +30,7 @@ Requirements
 ------------
 
   Unyaffs should run on most unix-like operating systems.
-  A C compiler environment and make is neccessary to compile it.
+  A C compiler environment and make is necessary to compile it.
 
 
 Compiling
