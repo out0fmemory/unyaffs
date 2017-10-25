@@ -523,7 +523,7 @@ void process_chunk(void) {
 		case YAFFS_OBJECT_TYPE_DIRECTORY:
 			if (pt->t.objectId != YAFFS_OBJECTID_ROOT &&
 			    mkdir(obj->path_name, oh.yst_mode & STD_PERMS) < 0)
-					prt_err(1, errno, "Can't create directory %s", obj->path_name);
+					prt_err(0, errno, "Can't create directory %s", obj->path_name);
 			safe_lchown(obj->path_name, oh.yst_uid, oh.yst_gid);
 			if ((pt->t.objectId == YAFFS_OBJECTID_ROOT ||
 			     (oh.yst_mode & EXTRA_PERMS) != 0) &&
